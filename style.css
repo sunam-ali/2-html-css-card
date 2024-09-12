@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.main{
+    height: 100vh;
+    background: #8180e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.card{
+    width: 380px;
+    height: 560px;
+    background: #2a265f;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+}
+.card h3{
+    color: #ff5e5e;
+}
+.card p{
+    color: #E4DDDD;
+}
+.card p span{
+    color: #ff5e5e;
+    font-weight: bold;
+}
+.box-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social-media{
+    font-size: 2.4rem;
+    display: flex;
+    gap: 2rem;
+    transition: .2s ease;
+    margin-top: 1rem;
+}
+.social-media .bx{
+    color: #E4DDDD;
+}
+.social-media .bx:hover{
+    color: #ff5e5e;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    gap: 1.5rem;
+    transition: .5s;
+}
+.buttons button{
+    padding: 10px;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid #ff5e5e;
+    color: #E4DDDD;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background: #ff5e5e;
+    color: #E4DDDD;
+}
+hr{
+    margin: 2rem 2rem;
+    height: 0.5px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer .grp {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #E4DDDD;
+}
+.footer .grp .bx{
+    color: #e26767;
+}
+@media (min-width: 720px) {
+    .card{
+        width: 760px;
+        height: 380px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card .box-one p{
+        width: 80%;
+    }
+    .buttons button{
+        width: 100%;
+        padding: 5px ;
+    }
+    .box-two{
+        width: 50%;
+        padding-right: 20px;
+    }
+}
